@@ -1,0 +1,9 @@
+# local environment and caches
+venv/
+__pycache__/
+
+# recordings and generated transcripts never go into git
+*.mp3
+*.wav
+*.m4a
+*.txt
