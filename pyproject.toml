@@ -1,0 +1,21 @@
+[project]
+name = "transcribe"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.49.0",
+    "pyannote-audio>=4.0.7",
+    "torch>=2.15.0",
+    "torchaudio>=2.11.1",
+    "torchcodec>=0.17.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+torchcodec = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

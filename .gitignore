@@ -1,5 +1,6 @@
 # local environment and caches
 venv/
+.venv/
 __pycache__/
 
 # recordings and generated transcripts never go into git
